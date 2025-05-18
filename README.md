@@ -1,5 +1,7 @@
 # Sparkling Duck
 
+This repository presents a performance comparison between Apache Spark and DuckDB for common data analysis tasks with equivalent query implementations using both tools.
+
 To explore sparkling-duck.py with vscode install `Jupyter` extension.
 
 ## Data origin
@@ -26,13 +28,5 @@ source "$HOME/.sdkman/bin/sdkman-init.sh"
 # Install java 11
 sdk install java 11.0.11.hs-adpt
 sdk use java 11.0.11.hs-adpt 
-
-# To automatically switch, edit the .sdkmanrc
-
-
-
-
-
-
 ```
 
