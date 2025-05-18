@@ -1,0 +1,20 @@
+[project]
+name = "sparkling-duck"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "duckdb>=1.2.2",
+    "ipykernel>=6.29.5",
+    "nbconvert[webpdf]>=7.16.6",
+    "pandas>=2.2.3",
+    "pyarrow>=20.0.0",
+    "pyspark>=3.5.5",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=6.29.5",
+    "ipython>=9.2.0",
+]
