@@ -25,8 +25,9 @@ uv add pyspark
 curl -s "https://get.sdkman.io" | bash
 source "$HOME/.sdkman/bin/sdkman-init.sh"
 
-# Install java 11
-sdk install java 11.0.11.hs-adpt
-sdk use java 11.0.11.hs-adpt 
+# Install java 17
+JAVA_VERSION=17.0.10-amzn
+sdk install java $JAVA_VERSION
+sdk use java $JAVA_VERSION
 ```
 
