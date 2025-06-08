@@ -1,10 +1,12 @@
-# %% [Markdown]
+#%% [markdown]
+
+# Sparkling Duck
 
 #%%
 
 movie = "data/movies.parquet"
 
-# %%
+#%%
 import os
 
 from pyspark.sql import SparkSession
@@ -12,7 +14,7 @@ from pyspark.sql import SparkSession
 import pyspark.sql.functions as F
 
 # Ensure JAVA environment variable is set
-java_home = os.path.expandvars("$HOME/.sdkman/candidates/java/11.0.11.hs-adpt")
+java_home = os.path.expandvars("$HOME/.sdkman/candidates/java/17.0.10-amzn")
 os.environ['JAVA_HOME'] = java_home
 os.environ['PATH'] = java_home + '/bin:' + os.environ['PATH']
 
@@ -39,10 +41,10 @@ spark_result = (
 
 spark_result.show()
 
-# %%
+#%%
 import duckdb
 
-# %%
+#%%
 %%timeit -r 3 -n 1
 
 print(f"DuckDB version: {duckdb.__version__}")
@@ -58,6 +60,5 @@ duck_result = (
 )
 
 duck_result.show()
-
 
 # %%
